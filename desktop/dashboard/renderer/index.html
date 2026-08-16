@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="../assets/atlas-dashboard.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>TFM2 Atlas Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <aside id="sidebar" class="sidebar">
+      <div class="brand"><span class="brand-mark">A</span><div><strong>Atlas Dashboard</strong><small>TFM2 0.5.5</small></div><button id="sidebarToggle" class="sidebar-toggle" type="button" aria-label="메뉴 숨기기" data-i18n-title="hideMenu">‹</button></div>
+      <label class="search-wrap"><span>⌕</span><input id="search" type="search" data-placeholder="searchChampion" /></label>
+      <nav id="primaryNav" class="primary-nav"></nav>
+      <div class="champion-list" id="championList"></div>
+      <div class="sidebar-footer">
+        <div class="language-switch"><button data-language="ko">한국어</button><button data-language="en">English</button></div>
+      </div>
+    </aside>
+    <button id="sidebarReveal" class="sidebar-reveal" type="button" aria-label="메뉴 열기" data-i18n-title="showMenu">☰</button>
+    <main class="main">
+      <header class="topbar">
+        <div><small id="eyebrow">TFM2 · 0.5.5</small><h1 id="pageTitle"></h1></div>
+        <div class="connection" id="connection"><span class="dot"></span><div><strong></strong><small></small></div></div>
+      </header>
+      <section id="profilePanel" class="profile-panel"></section>
+      <section id="content" class="content"></section>
+    </main>
+    <div id="toast" class="toast" hidden></div>
+    <script src="champions.js"></script>
+    <script src="draft-form.js"></script>
+    <script src="latest-request.js"></script>
+    <script src="refresh-plan.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "TFM2 Atlas Editor",
+  "author": "ehcho",
+  "version": "1.0.33",
+  "mod_type": "native",
+  "contains_code": true,
+  "description": "Stable player, staff, contract, mastery and lock service for TFM2 Atlas Editor.",
+  "last_updated": "2026-08-15",
+  "dependencies": [
+    {
+      "mod_id": "base",
+      "version": ">=0.5.5"
+    },
+    {
+      "mod_id": "tfm2_atlas_core",
+      "version": ">=1.0.33"
+    },
+    {
+      "mod_id": "tfm2_atlas_client_055",
+      "version": ">=1.0.33"
+    }
+  ]
+}

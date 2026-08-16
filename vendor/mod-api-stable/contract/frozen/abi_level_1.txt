@@ -1,0 +1,1026 @@
+abi_level = 1
+symbol tfm2_mod_required_abi_level
+symbol tfm2_mod_entry_stable
+const LOG_LEVEL_ERROR = 1
+const LOG_LEVEL_WARN = 2
+const LOG_LEVEL_INFO = 3
+const LOG_LEVEL_DEBUG = 4
+enumcode ChampionCategoryV1.Melee = 0
+enumcode ChampionCategoryV1.Range = 1
+enumcode ChampionCategoryV1.Magician = 2
+enumcode ChampionCategoryV1.Util = 3
+enumcode ChampionCategoryV1.Assassin = 4
+enumcode ChampionTagV1.Ad = 0
+enumcode ChampionTagV1.Ap = 1
+enumcode ChampionTagV1.Heal = 2
+enumcode ChampionTagV1.Shield = 3
+enumcode ChampionTagV1.Dot = 4
+enumcode ChampionTagV1.Cc = 5
+enumcode ChampionTagV1.Range = 6
+enumcode ChampionTagV1.Melee = 7
+enumcode ChampionTagV1.Tank = 8
+enumcode ChampionTagV1.Magic = 9
+enumcode ItemTagV1.Ad = 0
+enumcode ItemTagV1.Ap = 1
+enumcode ItemTagV1.AttackSpeed = 2
+enumcode ItemTagV1.Defense = 3
+enumcode ItemTagV1.MagicResistance = 4
+enumcode ItemTagV1.Hp = 5
+enumcode ItemTagV1.DefensePenetration = 6
+enumcode ItemTagV1.Vamp = 7
+enumcode ItemTagV1.HealReduce = 8
+enumcode ItemTagV1.ShieldBreak = 9
+enumcode ItemTagV1.MoveSpeed = 10
+enumcode ItemTagV1.AttackRange = 11
+enumcode ItemTagV1.Shield = 12
+enumcode ItemTagV1.HpPercentDamage = 13
+enumcode ItemTagV1.AsDebuff = 14
+enumcode ItemTagV1.ReflectDamage = 15
+enumcode ItemTagV1.Toughness = 16
+enumcode ItemTagV1.MrDebuff = 17
+enumcode ItemTagV1.RangeDamage = 18
+enumcode ItemTagV1.MrPenetration = 19
+enumcode ItemTagV1.CooltimeReduce = 20
+enumcode ItemTagV1.DotDamage = 21
+enumcode ItemTagV1.HpRegen = 22
+enumcode ItemTagV1.MyHpPercentDamage = 23
+enumcode ItemTagV1.ShareDamage = 24
+enumcode ItemTagV1.Range = 25
+enumcode ItemCategoryV1.Ad = 0
+enumcode ItemCategoryV1.AttackSpeed = 1
+enumcode ItemCategoryV1.Defense = 2
+enumcode ItemCategoryV1.MagicResistance = 3
+enumcode ItemCategoryV1.Magic = 4
+enumcode ItemCategoryV1.Hp = 5
+enumcode AttackTypeV1.BaseAttack = 0
+enumcode AttackTypeV1.Skill = 1
+enumcode AttackTypeV1.Dot = 2
+enumcode AttackTypeV1.DotIgnoreShield = 3
+enumcode AttackTypeV1.Item = 4
+enumcode AttackTypeV1.Well = 5
+enumcode DamageTypeV1.Ad = 0
+enumcode DamageTypeV1.Ap = 1
+enumcode DamageTypeV1.Fixed = 2
+enumcode CastingTypeV1.Targeting = 0
+enumcode CastingTypeV1.Position = 1
+enumcode CastingTypeV1.Direction = 2
+enumcode CastingTypeV1.None = 3
+enumcode CastingTargetV1.Ally = 0
+enumcode CastingTargetV1.AllyChampion = 1
+enumcode CastingTargetV1.AllyChampionInCc = 2
+enumcode CastingTargetV1.AllyNotSelf = 3
+enumcode CastingTargetV1.AllyOnlySelf = 4
+enumcode CastingTargetV1.Enemy = 5
+enumcode CastingTargetV1.EnemyWithoutTower = 6
+enumcode CastingTargetV1.EnemyChampion = 7
+enumcode CastingTargetV1.EnemyChampionInCc = 8
+enumcode CastingTargetV1.EnemyChampionRecentlyAttacked = 9
+enumcode CastingTargetV1.Both = 10
+enumcode CastingTargetV1.BothWithoutTower = 11
+enumcode CastingTargetV1.BothChampion = 12
+enumcode CastingTargetV1.None = 13
+enumcode LaneV1.Top = 0
+enumcode LaneV1.Jungle = 1
+enumcode LaneV1.Mid = 2
+enumcode LaneV1.Bottom = 3
+enumcode LaneV1.Support = 4
+enumcode CcKindV1.Airborne = 0
+enumcode CcKindV1.Stun = 1
+enumcode CcKindV1.Bind = 2
+enumcode CcKindV1.BlockAttack = 3
+enumcode CcKindV1.BlockSkill = 4
+enumcode CcKindV1.BlockMoveSkill = 5
+enumcode CcKindV1.ForceMove = 6
+enumcode CcKindV1.Taunt = 7
+enumcode CcKindV1.Fear = 8
+enumcode CcKindV1.Charm = 9
+enumcode CcKindV1.Animation = 10
+enumcode BuffDurationV1.Permanent = 0
+enumcode BuffDurationV1.Time = 1
+enumcode BuffDurationV1.WithShield = 2
+enumcode InputTargetKindV1.None = 0
+enumcode InputTargetKindV1.Target = 1
+enumcode InputTargetKindV1.Dir = 2
+enumcode InputTargetKindV1.Pos = 3
+enumcode EventTargetKindV1.Broadcast = 0
+enumcode EventTargetKindV1.Player = 1
+enumcode EventTargetKindV1.Team = 2
+enumcode CommandResultV1.Pass = 0
+enumcode CommandResultV1.Handled = 1
+enumcode SceneKindV1.Loading = 0
+enumcode SceneKindV1.Title = 1
+enumcode SceneKindV1.NewGame = 2
+enumcode SceneKindV1.DatabaseEdit = 3
+enumcode SceneKindV1.InGame = 4
+enumcode SceneKindV1.GameTest = 5
+enumcode SceneKindV1.Room = 6
+enumcode SceneKindV1.Lobby = 7
+enumcode UiEventKindV1.Click = 0
+enumcode UiEventKindV1.RightClick = 1
+enumcode UiEventKindV1.CheckboxSelect = 2
+enumcode UiEventKindV1.TreeViewSelect = 3
+enumcode UiEventKindV1.TreeViewRightClick = 4
+enumcode UiEventKindV1.TreeViewMove = 5
+enumcode UiEventKindV1.TextEditComplete = 6
+enumcode UiEventKindV1.Remove = 7
+enumcode UiEventKindV1.Custom = 8
+enumcode UiEventKindV1.Changed = 9
+enumcode InputKindV1.Move = 0
+enumcode InputKindV1.Return = 1
+enumcode InputKindV1.Attack = 2
+enumcode InputKindV1.Skill = 3
+enumcode InputKindV1.Skill2 = 4
+enumcode InputKindV1.Ult = 5
+enumcode DraftPhaseV1.Ban = 0
+enumcode DraftPhaseV1.Pick = 1
+enumcode DifficultyV1.Easy = 0
+enumcode DifficultyV1.Normal = 1
+enumcode DifficultyV1.Hard = 2
+enumcode DraftDecisionKindV1.Pass = 0
+enumcode DraftDecisionKindV1.Add = 1
+enumcode DraftDecisionKindV1.Replace = 2
+enumcode AiDecisionKindV1.Pass = 0
+enumcode AiDecisionKindV1.Replace = 1
+enumcode GameModeKindV1.Moba = 0
+enumcode GameModeKindV1.SingleLane = 1
+enumcode GameModeKindV1.DeathMatch = 2
+enumcode SettingTargetV1.GameSetting = 0
+enumcode SettingTargetV1.ItemSetting = 1
+enumcode RecordKindV1.Team = 0
+enumcode RecordKindV1.Athlete = 1
+enumcode RecordKindV1.League = 2
+enumcode RecordKindV1.Tournament = 3
+enumcode RecordKindV1.Staff = 4
+enumcode RecordKindV1.MatchNormal = 5
+enumcode RecordKindV1.MatchPractice = 6
+enumcode RecordKindV1.MatchTutorial = 7
+enumcode RecordKindV1.MatchSoloRank = 8
+enumcode RecordKindV1.LeagueCompetition = 9
+enumcode RecordKindV1.TournamentCompetition = 10
+enumcode RecordKindV1.SoloRankMatch = 11
+enumcode RecordKindV1.KnowledgeBase = 12
+enumcode RecordKindV1.YearSchedule = 13
+enumcode RecordKindV1.Match = 14
+enumcode TextAlignXV1.Left = 0
+enumcode TextAlignXV1.Center = 1
+enumcode TextAlignXV1.Right = 2
+enumcode TextAlignYV1.Top = 0
+enumcode TextAlignYV1.Center = 1
+enumcode TextAlignYV1.Bottom = 2
+enumcode ProjectileMoveKindV1.Target = 0
+enumcode ProjectileMoveKindV1.Linear = 1
+enumcode ManagementEventKindV1.MatchFinished = 0
+enumcode ManagementEventKindV1.TransferCompleted = 1
+enumcode ManagementEventKindV1.SeasonRollover = 2
+enumcode ClientSceneKindV1.Main = 0
+enumcode ClientSceneKindV1.Lineup = 1
+enumcode ClientSceneKindV1.StadiumEntrance = 2
+enumcode ClientSceneKindV1.Match = 3
+enumcode ClientSceneKindV1.MatchResult = 4
+enumcode ClientSceneKindV1.LockerRoom = 5
+enumcode ClientSceneKindV1.InGame = 6
+enumcode ClientSceneKindV1.Prologue = 7
+enumcode ClientSceneKindV1.PrologueFirst = 8
+enumcode ClientSceneKindV1.TutorialMorgad = 9
+enumcode ClientSceneKindV1.TutorialSerpen = 10
+enumcode ClientSceneKindV1.Tutorial5v5 = 11
+enumcode InputEventKindV1.KeyPressed = 0
+enumcode InputEventKindV1.KeyReleased = 1
+layout GameVersionV1 align=4
+size GameVersionV1 = 12
+field GameVersionV1.major offset=0 type=u32
+field GameVersionV1.minor offset=4 type=u32
+field GameVersionV1.patch offset=8 type=u32
+layout EntityHandleV1 align=8
+size EntityHandleV1 = 8
+field EntityHandleV1.0 offset=0 type=u64
+layout PlayerHandleV1 align=8
+size PlayerHandleV1 = 8
+field PlayerHandleV1.0 offset=0 type=u64
+layout ProjectileHandleV1 align=8
+size ProjectileHandleV1 = 8
+field ProjectileHandleV1.0 offset=0 type=u64
+layout StrV1 align=8
+size StrV1 = 16
+field StrV1.ptr offset=0 type=*constu8
+field StrV1.len offset=8 type=usize
+layout StatV1 align=8
+size StatV1 = 72
+field StatV1.attack offset=0 type=usize
+field StatV1.magic_power offset=8 type=usize
+field StatV1.hp offset=16 type=usize
+field StatV1.defence offset=24 type=usize
+field StatV1.magic_resistance offset=32 type=usize
+field StatV1.move_speed offset=40 type=usize
+field StatV1.hp_regen offset=48 type=usize
+field StatV1.stack offset=56 type=usize
+field StatV1.crit_chance offset=64 type=usize
+layout BuffV1 align=8
+size BuffV1 = 280
+field BuffV1.name_buf offset=0 type=[u8;BUFF_NAME_CAP]
+field BuffV1.name_len offset=64 type=usize
+field BuffV1.duration_kind offset=72 type=u32
+field BuffV1.duration_tick offset=80 type=usize
+field BuffV1.attack offset=88 type=i32
+field BuffV1.attack_mult offset=92 type=i32
+field BuffV1.magic_power offset=96 type=i32
+field BuffV1.magic_power_mult offset=100 type=i32
+field BuffV1.defence offset=104 type=i32
+field BuffV1.defence_mult offset=108 type=i32
+field BuffV1.hp offset=112 type=i32
+field BuffV1.hp_regen offset=116 type=i32
+field BuffV1.magic_resistance offset=120 type=i32
+field BuffV1.magic_resistance_mult offset=124 type=i32
+field BuffV1.vamp offset=128 type=i32
+field BuffV1.hp_mult offset=132 type=i32
+field BuffV1.move_speed_mult offset=136 type=i32
+field BuffV1.attack_speed_mult offset=140 type=i32
+field BuffV1.skill_cooldown_mult offset=144 type=i32
+field BuffV1.ult_cooldown_mult offset=148 type=i32
+field BuffV1.radius_mult offset=152 type=i32
+field BuffV1.crit_chance offset=156 type=i32
+field BuffV1.damage_reflect offset=160 type=usize
+field BuffV1.damaged_amplify offset=168 type=usize
+field BuffV1.damaged_reduce offset=176 type=usize
+field BuffV1.defence_penetration offset=184 type=usize
+field BuffV1.magic_resistance_penetration offset=192 type=usize
+field BuffV1.toughness offset=200 type=usize
+field BuffV1.heal_reduce offset=208 type=usize
+field BuffV1.range offset=216 type=usize
+field BuffV1.base_attack_enemy_max_hp_damage offset=224 type=usize
+field BuffV1.self_max_hp_damage offset=232 type=usize
+field BuffV1.skill_enemy_max_hp_damage offset=240 type=usize
+field BuffV1.dot_amplify offset=248 type=usize
+field BuffV1.base_attack_damaged_reduce offset=256 type=usize
+field BuffV1.skill_damaged_reduce offset=264 type=usize
+field BuffV1.cc_immune offset=272 type=bool
+field BuffV1.undying offset=273 type=bool
+field BuffV1.ignore_wall offset=274 type=bool
+layout CcV1 align=8
+size CcV1 = 120
+field CcV1.kind offset=0 type=u32
+field CcV1.tick offset=8 type=u64
+field CcV1.dx offset=16 type=i64
+field CcV1.dy offset=24 type=i64
+field CcV1.speed offset=32 type=u64
+field CcV1.target offset=40 type=usize
+field CcV1.name_buf offset=48 type=[u8;BUFF_NAME_CAP]
+field CcV1.name_len offset=112 type=usize
+layout InputTargetV1 align=8
+size InputTargetV1 = 48
+field InputTargetV1.kind offset=0 type=u32
+field InputTargetV1.target_id offset=8 type=usize
+field InputTargetV1.dir_x offset=16 type=i64
+field InputTargetV1.dir_y offset=24 type=i64
+field InputTargetV1.x offset=32 type=u64
+field InputTargetV1.y offset=40 type=u64
+layout KillLogV1 align=8
+size KillLogV1 = 48
+field KillLogV1.tick offset=0 type=usize
+field KillLogV1.killer_team offset=8 type=usize
+field KillLogV1.killer_position offset=16 type=u32
+field KillLogV1.killed_position offset=20 type=u32
+field KillLogV1.assist_count offset=24 type=u32
+field KillLogV1.assist_positions offset=28 type=[u32;4]
+layout ProjectileInfoV1 align=8
+size ProjectileInfoV1 = 40
+field ProjectileInfoV1.x offset=0 type=u64
+field ProjectileInfoV1.y offset=8 type=u64
+field ProjectileInfoV1.caster_id offset=16 type=usize
+field ProjectileInfoV1.team offset=24 type=usize
+field ProjectileInfoV1.is_end offset=32 type=bool
+layout SimCtxV1 align=8
+size SimCtxV1 = 32
+field SimCtxV1.size offset=0 type=usize
+field SimCtxV1.sim offset=8 type=*constSimVtableV1
+field SimCtxV1.frame offset=16 type=*constFrameVtableV1
+field SimCtxV1.state offset=24 type=*mutstd::ffi::c_void
+layout ChampionRegV1 align=8
+size ChampionRegV1 = 16
+field ChampionRegV1.userdata offset=0 type=*mutstd::ffi::c_void
+field ChampionRegV1.vtable offset=8 type=*constChampionVtableV1
+layout ActionRegV1 align=8
+size ActionRegV1 = 16
+field ActionRegV1.userdata offset=0 type=*mutstd::ffi::c_void
+field ActionRegV1.vtable offset=8 type=*constActionVtableV1
+layout EffectTypeRegV1 align=8
+size EffectTypeRegV1 = 16
+field EffectTypeRegV1.userdata offset=0 type=*mutstd::ffi::c_void
+field EffectTypeRegV1.vtable offset=8 type=*constEffectTypeVtableV1
+layout PassiveRegV1 align=8
+size PassiveRegV1 = 16
+field PassiveRegV1.userdata offset=0 type=*mutstd::ffi::c_void
+field PassiveRegV1.vtable offset=8 type=*constPassiveVtableV1
+layout ItemRegV1 align=8
+size ItemRegV1 = 16
+field ItemRegV1.userdata offset=0 type=*mutstd::ffi::c_void
+field ItemRegV1.vtable offset=8 type=*constItemVtableV1
+layout NativeEffectRegV1 align=8
+size NativeEffectRegV1 = 32
+field NativeEffectRegV1.name offset=0 type=StrV1
+field NativeEffectRegV1.effect offset=16 type=EffectTypeRegV1
+layout EffectSpecV1 align=8
+size EffectSpecV1 = 56
+field EffectSpecV1.range offset=0 type=u64
+field EffectSpecV1.growth_range offset=8 type=u64
+field EffectSpecV1.start_timing offset=16 type=usize
+field EffectSpecV1.casting offset=24 type=u32
+field EffectSpecV1.target offset=28 type=u32
+field EffectSpecV1.attack_type offset=32 type=u32
+field EffectSpecV1.effect offset=40 type=EffectTypeRegV1
+layout ChampionVtableV1 align=8
+size ChampionVtableV1 = 112
+field ChampionVtableV1.size offset=0 type=usize
+field ChampionVtableV1.destroy offset=8 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void)>
+field ChampionVtableV1.id offset=16 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->StrV1>
+field ChampionVtableV1.name offset=24 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->StrV1>
+field ChampionVtableV1.skill_icon offset=32 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,usize,*mutStrV1,*mutStrV1)->bool>
+field ChampionVtableV1.category offset=40 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->u32>
+field ChampionVtableV1.tags offset=48 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*mutu32,usize)->
+usize>
+field ChampionVtableV1.stat offset=56 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*mutStatV1)>
+field ChampionVtableV1.growth offset=64 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*mutStatV1)>
+field ChampionVtableV1.attack offset=72 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*mutActionRegV1)->
+bool>
+field ChampionVtableV1.skill offset=80 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*mutActionRegV1)->
+bool>
+field ChampionVtableV1.skill2 offset=88 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*mutActionRegV1)->
+bool>
+field ChampionVtableV1.ult offset=96 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*mutActionRegV1)->
+bool>
+field ChampionVtableV1.passive offset=104 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*mutPassiveRegV1)->
+bool>
+layout ActionVtableV1 align=8
+size ActionVtableV1 = 96
+field ActionVtableV1.size offset=0 type=usize
+field ActionVtableV1.destroy offset=8 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void)>
+field ActionVtableV1.clone offset=16 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->*mutstd::ffi::c_void>
+field ActionVtableV1.action_name offset=24 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->StrV1>
+field ActionVtableV1.duration offset=32 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->usize>
+field ActionVtableV1.cancelable offset=40 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->bool>
+field ActionVtableV1.cooltime offset=48 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*constStatV1,usize)->
+usize>
+field ActionVtableV1.casting_target offset=56 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->u32>
+field ActionVtableV1.effect offset=64 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*mutEffectSpecV1)->
+bool>
+field ActionVtableV1.cooltime_use_count offset=72 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*constStatV1)->usize>
+field ActionVtableV1.can_use_with_move offset=80 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->bool>
+field ActionVtableV1.description offset=88 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->StrV1>
+layout EffectTypeVtableV1 align=8
+size EffectTypeVtableV1 = 112
+field EffectTypeVtableV1.size offset=0 type=usize
+field EffectTypeVtableV1.destroy offset=8 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void)>
+field EffectTypeVtableV1.apply offset=16 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*mutSimCtxV1,u64,usize,*constInputTargetV1)>
+field EffectTypeVtableV1.expected_damage offset=24 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*constStatV1,*mutusize,*mutusize)>
+field EffectTypeVtableV1.expected_heal offset=32 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*constStatV1)->usize>
+field EffectTypeVtableV1.expected_shield offset=40 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*constStatV1)->usize>
+field EffectTypeVtableV1.expected_cc_time offset=48 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*mutusize)->bool>
+field EffectTypeVtableV1.expected_buff offset=56 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*constStatV1,*mutBuffV1)->bool>
+field EffectTypeVtableV1.expected_move_distance offset=64 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*mutusize,*mutu64)->
+bool>
+field EffectTypeVtableV1.expected_rush_effect offset=72 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->bool>
+field EffectTypeVtableV1.auto_target offset=80 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->bool>
+field EffectTypeVtableV1.on_caster offset=88 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->bool>
+field EffectTypeVtableV1.can_move offset=96 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->bool>
+field EffectTypeVtableV1.linear_move_speed offset=104 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*mutusize)->bool>
+layout PassiveVtableV1 align=8
+size PassiveVtableV1 = 88
+field PassiveVtableV1.size offset=0 type=usize
+field PassiveVtableV1.destroy offset=8 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void)>
+field PassiveVtableV1.clone offset=16 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->*mutstd::ffi::c_void>
+field PassiveVtableV1.on_spawn offset=24 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*mutSimCtxV1,usize,usize)>
+field PassiveVtableV1.on_attack offset=32 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*mutSimCtxV1,usize,usize,usize,*mutusize)>
+field PassiveVtableV1.on_damaged offset=40 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*mutSimCtxV1,usize,usize,usize,usize)>
+field PassiveVtableV1.on_kill offset=48 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*mutSimCtxV1,usize,usize)>
+field PassiveVtableV1.on_update offset=56 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*mutSimCtxV1,u64,usize,usize)>
+field PassiveVtableV1.on_base_attack offset=64 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*mutSimCtxV1,u64,usize,usize)>
+field PassiveVtableV1.on_assist offset=72 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*mutSimCtxV1,usize,usize)>
+field PassiveVtableV1.on_dead offset=80 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,*mutSimCtxV1,usize)>
+layout ItemVtableV1 align=8
+size ItemVtableV1 = 152
+field ItemVtableV1.size offset=0 type=usize
+field ItemVtableV1.destroy offset=8 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void)>
+field ItemVtableV1.clone offset=16 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->*mutstd::ffi::c_void>
+field ItemVtableV1.key offset=24 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->StrV1>
+field ItemVtableV1.icon offset=32 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->StrV1>
+field ItemVtableV1.price offset=40 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->usize>
+field ItemVtableV1.tier offset=48 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->usize>
+field ItemVtableV1.stat offset=56 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*mutBuffV1)>
+field ItemVtableV1.next_tier offset=64 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*mutStrV1,usize)->
+usize>
+field ItemVtableV1.previous_tier offset=72 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*mutStrV1,usize)->
+usize>
+field ItemVtableV1.tags offset=80 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*mutu32,usize)->
+usize>
+field ItemVtableV1.category offset=88 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->u32>
+field ItemVtableV1.on_attack offset=96 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*mutSimCtxV1,usize,usize,*mutusize,u32)>
+field ItemVtableV1.update offset=104 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,*mutSimCtxV1,u64,usize)>
+field ItemVtableV1.on_spawn offset=112 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,*mutSimCtxV1,usize)>
+field ItemVtableV1.on_healed offset=120 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*mutSimCtxV1,usize,bool,usize,usize)>
+field ItemVtableV1.on_damaged offset=128 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*mutSimCtxV1,usize,usize,usize,usize)>
+field ItemVtableV1.on_kill offset=136 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*mutSimCtxV1,u64,usize,usize)>
+field ItemVtableV1.on_skill_hit offset=144 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*mutSimCtxV1,u64,usize,usize)>
+layout SimVtableV1 align=8
+size SimVtableV1 = 576
+field SimVtableV1.size offset=0 type=usize
+field SimVtableV1.tick offset=8 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->usize>
+field SimVtableV1.seed offset=16 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->u64>
+field SimVtableV1.score_diff offset=24 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,usize)->i32>
+field SimVtableV1.is_end offset=32 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->bool>
+field SimVtableV1.entity_count offset=40 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->usize>
+field SimVtableV1.entity_at offset=48 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,usize)->EntityHandleV1>
+field SimVtableV1.entity_is_valid offset=56 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,EntityHandleV1)->bool>
+field SimVtableV1.entity_stat offset=64 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,EntityHandleV1,*mutStatV1)->bool>
+field SimVtableV1.entity_pos offset=72 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,EntityHandleV1,*mutu64,*mutu64)->bool>
+field SimVtableV1.entity_hp offset=80 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,EntityHandleV1,*mutusize,*mutusize)->bool>
+field SimVtableV1.entity_team offset=88 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,EntityHandleV1)->usize>
+field SimVtableV1.entity_level offset=96 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,EntityHandleV1)->usize>
+field SimVtableV1.entity_is_alive offset=104 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,EntityHandleV1)->bool>
+field SimVtableV1.entity_is_champion offset=112 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,EntityHandleV1)->bool>
+field SimVtableV1.entity_is_tower offset=120 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,EntityHandleV1)->bool>
+field SimVtableV1.entity_is_minion offset=128 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,EntityHandleV1)->bool>
+field SimVtableV1.entity_shield offset=136 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,EntityHandleV1)->usize>
+field SimVtableV1.entity_radius offset=144 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,EntityHandleV1)->usize>
+field SimVtableV1.entity_is_targetable offset=152 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,EntityHandleV1)->bool>
+field SimVtableV1.entity_buff_count offset=160 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,EntityHandleV1)->usize>
+field SimVtableV1.entity_buff_at offset=168 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,EntityHandleV1,usize,*mutBuffV1)->bool>
+field SimVtableV1.entity_cc_count offset=176 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,EntityHandleV1)->usize>
+field SimVtableV1.entity_cc_at offset=184 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,EntityHandleV1,usize,*mutCcV1)->bool>
+field SimVtableV1.player_count offset=192 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->usize>
+field SimVtableV1.player_at offset=200 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,usize)->PlayerHandleV1>
+field SimVtableV1.player_is_valid offset=208 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,PlayerHandleV1)->bool>
+field SimVtableV1.player_champion offset=216 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,PlayerHandleV1)->
+EntityHandleV1>
+field SimVtableV1.player_level offset=224 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,PlayerHandleV1)->usize>
+field SimVtableV1.player_gold offset=232 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,PlayerHandleV1)->usize>
+field SimVtableV1.player_lane offset=240 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,PlayerHandleV1)->u32>
+field SimVtableV1.player_team offset=248 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,PlayerHandleV1)->usize>
+field SimVtableV1.player_is_alive offset=256 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,PlayerHandleV1)->bool>
+field SimVtableV1.player_respawn_time offset=264 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,PlayerHandleV1)->usize>
+field SimVtableV1.player_kills offset=272 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,PlayerHandleV1)->usize>
+field SimVtableV1.player_deaths offset=280 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,PlayerHandleV1)->usize>
+field SimVtableV1.player_assists offset=288 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,PlayerHandleV1)->usize>
+field SimVtableV1.player_cs offset=296 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,PlayerHandleV1)->usize>
+field SimVtableV1.deal_damage offset=304 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,usize,usize,usize,usize,u32)>
+field SimVtableV1.heal offset=312 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,usize,usize,usize)>
+field SimVtableV1.add_buff offset=320 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,usize,*constBuffV1)>
+field SimVtableV1.apply_cc offset=328 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,usize,*constCcV1)>
+field SimVtableV1.distance_sq offset=336 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,usize,usize)->u64>
+field SimVtableV1.is_visible offset=344 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,usize,usize)->bool>
+field SimVtableV1.champion_count offset=352 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->usize>
+field SimVtableV1.champion_id_at offset=360 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,usize)->usize>
+field SimVtableV1.tower_count offset=368 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->usize>
+field SimVtableV1.tower_id_at offset=376 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,usize)->usize>
+field SimVtableV1.kill_log_count offset=384 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->usize>
+field SimVtableV1.kill_log_at offset=392 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,usize,*mutKillLogV1)->
+bool>
+field SimVtableV1.projectile_count offset=400 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->usize>
+field SimVtableV1.projectile_at offset=408 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,usize)->
+ProjectileHandleV1>
+field SimVtableV1.projectile_is_valid offset=416 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,ProjectileHandleV1)->
+bool>
+field SimVtableV1.projectile_info offset=424 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,ProjectileHandleV1,*mutProjectileInfoV1)->
+bool>
+field SimVtableV1.entity_set_hp offset=432 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,EntityHandleV1,usize)->
+bool>
+field SimVtableV1.entity_set_pos offset=440 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,EntityHandleV1,u64,u64)
+->bool>
+field SimVtableV1.entity_set_base_stat offset=448 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,EntityHandleV1,*constStatV1)->bool>
+field SimVtableV1.player_set_gold offset=456 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,PlayerHandleV1,usize)->
+bool>
+field SimVtableV1.player_add_gold offset=464 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,PlayerHandleV1,i64)->
+bool>
+field SimVtableV1.force_end offset=472 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,bool)>
+field SimVtableV1.player_cooldowns offset=480 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,PlayerHandleV1,*mutusize,*mutusize,*mut
+usize,*mutusize)->bool>
+field SimVtableV1.player_item_count offset=488 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,PlayerHandleV1)->usize>
+field SimVtableV1.player_item_key_at offset=496 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,PlayerHandleV1,usize,*mutu8,usize,*mutusize)
+->bool>
+field SimVtableV1.entity_name offset=504 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,EntityHandleV1,*mutu8,usize,*mutusize)->
+bool>
+field SimVtableV1.queue_effect offset=512 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*constu8,usize,u32,usize,*constInputTargetV1,
+usize)->bool>
+field SimVtableV1.spawn_unit offset=520 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*constu8,usize,usize,usize,u64,u64,u64,
+*constStatV1,*constUnitAttackV1)->usize>
+field SimVtableV1.spawn_projectile offset=528 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*constu8,usize,*constu8,usize,*const
+ProjectileSpawnV1)->bool>
+field SimVtableV1.strategy_get_json offset=536 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,usize,*constu8,usize,*mutu8,usize,*mut
+usize)->bool>
+field SimVtableV1.strategy_set_json offset=544 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,usize,*constu8,usize,*constu8,usize)->bool>
+field SimVtableV1.player_statistics_json offset=552 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,PlayerHandleV1,*constu8,usize,*mutu8,usize,
+*mutusize)->bool>
+field SimVtableV1.entity_remove_buff offset=560 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,EntityHandleV1,*constu8,usize)->usize>
+field SimVtableV1.entity_clear_cc offset=568 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,EntityHandleV1)->usize>
+layout UnitAttackV1 align=8
+size UnitAttackV1 = 56
+field UnitAttackV1.attack_ratio offset=0 type=usize
+field UnitAttackV1.attack offset=8 type=usize
+field UnitAttackV1.range offset=16 type=usize
+field UnitAttackV1.cooltime offset=24 type=usize
+field UnitAttackV1.duration offset=32 type=usize
+field UnitAttackV1.start_timing offset=40 type=usize
+field UnitAttackV1.cancelable offset=48 type=bool
+field UnitAttackV1.attack_type offset=52 type=u32
+layout ProjectileSpawnV1 align=8
+size ProjectileSpawnV1 = 96
+field ProjectileSpawnV1.caster_id offset=0 type=usize
+field ProjectileSpawnV1.team offset=8 type=usize
+field ProjectileSpawnV1.x offset=16 type=u64
+field ProjectileSpawnV1.y offset=24 type=u64
+field ProjectileSpawnV1.radius offset=32 type=u64
+field ProjectileSpawnV1.speed offset=40 type=u64
+field ProjectileSpawnV1.move_kind offset=48 type=u32
+field ProjectileSpawnV1.target_id offset=56 type=usize
+field ProjectileSpawnV1.target_x offset=64 type=u64
+field ProjectileSpawnV1.target_y offset=72 type=u64
+field ProjectileSpawnV1.penetrate offset=80 type=bool
+field ProjectileSpawnV1.attack_type offset=84 type=u32
+field ProjectileSpawnV1.casting_type offset=88 type=u32
+field ProjectileSpawnV1.casting_target offset=92 type=u32
+layout FrameVtableV1 align=8
+size FrameVtableV1 = 32
+field FrameVtableV1.size offset=0 type=usize
+field FrameVtableV1.debug_draw_line offset=8 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,u64,u64,u64,u64,u32)>
+field FrameVtableV1.debug_draw_circle offset=16 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,u64,u64,u64,u32)>
+field FrameVtableV1.debug_text offset=24 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,u64,u64,*constu8,usize,u32)>
+layout ServiceVersionV1 align=4
+size ServiceVersionV1 = 12
+field ServiceVersionV1.major offset=0 type=u32
+field ServiceVersionV1.minor offset=4 type=u32
+field ServiceVersionV1.patch offset=8 type=u32
+layout ModServiceV1 align=8
+size ModServiceV1 = 16
+field ModServiceV1.data offset=0 type=*mutstd::ffi::c_void
+field ModServiceV1.vtable offset=8 type=*conststd::ffi::c_void
+layout ServiceVtableV1 align=8
+size ServiceVtableV1 = 24
+field ServiceVtableV1.size offset=0 type=usize
+field ServiceVtableV1.register_service offset=8 type=Option<unsafeextern"C"fn(*constu8,usize,ServiceVersionV1,ModServiceV1)
+->bool>
+field ServiceVtableV1.query_service offset=16 type=Option<unsafeextern"C"
+fn(*constu8,usize,*constu8,usize,*constu8,usize,*mutModServiceV1)->
+bool>
+layout ServerCtxV1 align=8
+size ServerCtxV1 = 24
+field ServerCtxV1.size offset=0 type=usize
+field ServerCtxV1.vtable offset=8 type=*constServerVtableV1
+field ServerCtxV1.state offset=16 type=*mutstd::ffi::c_void
+layout ServerVtableV1 align=8
+size ServerVtableV1 = 184
+field ServerVtableV1.size offset=0 type=usize
+field ServerVtableV1.save_version offset=8 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->usize>
+field ServerVtableV1.save_set_version offset=16 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,usize)->bool>
+field ServerVtableV1.save_contains_key offset=24 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*constu8,usize)->
+bool>
+field ServerVtableV1.save_get offset=32 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*constu8,usize,*mutu8,usize,*mutusize)->
+bool>
+field ServerVtableV1.save_set offset=40 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*constu8,usize,*constu8,usize)->bool>
+field ServerVtableV1.save_remove offset=48 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,*constu8,usize)->bool>
+field ServerVtableV1.save_key_count offset=56 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->usize>
+field ServerVtableV1.save_key_at offset=64 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,usize,*mutu8,usize,*mutusize)->bool>
+field ServerVtableV1.emit_event offset=72 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,u32,usize,*constu8,usize,*constu8,usize)->
+bool>
+field ServerVtableV1.player_team_id offset=80 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,usize,*mutusize)->
+bool>
+field ServerVtableV1.setting_get_json offset=88 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,u32,*constu8,usize,*mutu8,usize,*mutusize)
+->bool>
+field ServerVtableV1.setting_set_json offset=96 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,u32,*constu8,usize,*constu8,usize)->bool>
+field ServerVtableV1.team_get_json offset=104 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,usize,*constu8,usize,*mutu8,usize,*mut
+usize)->bool>
+field ServerVtableV1.team_set_json offset=112 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,usize,*constu8,usize,*constu8,usize)->bool>
+field ServerVtableV1.athlete_get_json offset=120 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,usize,*constu8,usize,*mutu8,usize,*mut
+usize)->bool>
+field ServerVtableV1.athlete_set_json offset=128 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,usize,*constu8,usize,*constu8,usize)->bool>
+field ServerVtableV1.record_ids offset=136 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,u32,*mutusize,usize)
+->usize>
+field ServerVtableV1.record_get_json offset=144 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,u32,usize,*constu8,usize,*mutu8,usize,*mut
+usize)->bool>
+field ServerVtableV1.record_set_json offset=152 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,u32,usize,*constu8,usize,*constu8,usize)->
+bool>
+field ServerVtableV1.news_push offset=160 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,usize,*constu8,usize,*constu8,usize,*const
+u8,usize)->bool>
+field ServerVtableV1.management_event_next offset=168 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,u64,*mutu64,*mutu32,*mutu8,usize,*mut
+usize)->bool>
+field ServerVtableV1.force_transfer offset=176 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,usize,usize,f64)->bool>
+layout ServerExtVtableV1 align=8
+size ServerExtVtableV1 = 48
+field ServerExtVtableV1.size offset=0 type=usize
+field ServerExtVtableV1.destroy offset=8 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void)>
+field ServerExtVtableV1.on_server_start offset=16 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,*mutServerCtxV1)>
+field ServerExtVtableV1.before_management_tick offset=24 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,*mutServerCtxV1)>
+field ServerExtVtableV1.after_management_tick offset=32 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,*mutServerCtxV1)>
+field ServerExtVtableV1.handle_command offset=40 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*mutServerCtxV1,*constu8,usize,*constu8,
+usize,usize,bool,usize,bool)->u32>
+layout ServerExtRegV1 align=8
+size ServerExtRegV1 = 16
+field ServerExtRegV1.userdata offset=0 type=*mutstd::ffi::c_void
+field ServerExtRegV1.vtable offset=8 type=*constServerExtVtableV1
+layout SaveVtableV1 align=8
+size SaveVtableV1 = 80
+field SaveVtableV1.size offset=0 type=usize
+field SaveVtableV1.can_write offset=8 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->bool>
+field SaveVtableV1.version offset=16 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->usize>
+field SaveVtableV1.set_version offset=24 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,usize)->bool>
+field SaveVtableV1.contains_key offset=32 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*constu8,usize)->
+bool>
+field SaveVtableV1.get offset=40 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*constu8,usize,*mutu8,usize,*mutusize)->
+bool>
+field SaveVtableV1.set offset=48 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*constu8,usize,*constu8,usize)->bool>
+field SaveVtableV1.remove offset=56 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,*constu8,usize)->bool>
+field SaveVtableV1.key_count offset=64 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->usize>
+field SaveVtableV1.key_at offset=72 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,usize,*mutu8,usize,*mutusize)->bool>
+layout NetVtableV1 align=8
+size NetVtableV1 = 32
+field NetVtableV1.size offset=0 type=usize
+field NetVtableV1.send_command offset=8 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*constu8,usize,*constu8,usize)->bool>
+field NetVtableV1.take_events offset=16 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void)->usize>
+field NetVtableV1.taken_event_at offset=24 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,usize,*mutu8,usize,*mutusize,*mutu8,usize,
+*mutusize)->bool>
+layout DataVtableV1 align=8
+size DataVtableV1 = 144
+field DataVtableV1.size offset=0 type=usize
+field DataVtableV1.player_team_id offset=8 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*mutusize)->bool>
+field DataVtableV1.team_ids offset=16 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*mutusize,usize)->
+usize>
+field DataVtableV1.team_name offset=24 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,usize,*mutu8,usize,*mutusize)->bool>
+field DataVtableV1.athlete_ids offset=32 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*mutusize,usize)->
+usize>
+field DataVtableV1.athlete_name offset=40 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,usize,*mutu8,usize,*mutusize)->bool>
+field DataVtableV1.setting_get_json offset=48 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,u32,*constu8,usize,*mutu8,usize,*mutusize)
+->bool>
+field DataVtableV1.record_ids offset=56 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,u32,*mutusize,usize)
+->usize>
+field DataVtableV1.record_get_json offset=64 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,u32,usize,*constu8,usize,*mutu8,usize,*mut
+usize)->bool>
+field DataVtableV1.game_time offset=72 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*muti32,*mutu32,*mutu32,*mutu32,*mutu32)
+->bool>
+field DataVtableV1.head_to_head offset=80 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,usize,*mutusize,*mutusize)->bool>
+field DataVtableV1.competition_result offset=88 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,bool,usize,*mutusize,*mutusize)->bool>
+field DataVtableV1.schedule_get_json offset=96 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*constu8,usize,*mutu8,usize,*mutusize)->
+bool>
+field DataVtableV1.champion_count offset=104 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->usize>
+field DataVtableV1.champion_name_at offset=112 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,usize,*mutu8,usize,*mutusize)->bool>
+field DataVtableV1.champion_brief offset=120 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*constu8,usize,*mutChampionBriefV1)->bool>
+field DataVtableV1.client_scene_kind offset=128 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->u32>
+field DataVtableV1.client_main_tab_name offset=136 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*mutu8,usize,*mutusize)->bool>
+layout UiVtableV1 align=8
+size UiVtableV1 = 168
+field UiVtableV1.size offset=0 type=usize
+field UiVtableV1.query_exists offset=8 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*constu8,usize)->
+bool>
+field UiVtableV1.get_visible offset=16 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*constu8,usize,*mutbool)->bool>
+field UiVtableV1.set_visible offset=24 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,*constu8,usize,bool)->
+bool>
+field UiVtableV1.spawn_template offset=32 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*constu8,usize,*constu8,usize,bool)->bool>
+field UiVtableV1.register_click offset=40 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*constu8,usize,*constu8,usize,
+Option<UiClickHandlerFn>,*mutstd::ffi::c_void)->bool>
+field UiVtableV1.get_text offset=48 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*constu8,usize,*mutu8,usize,*mutusize)->
+bool>
+field UiVtableV1.set_text offset=56 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*constu8,usize,*constu8,usize)->bool>
+field UiVtableV1.register_path_events offset=64 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*constu8,usize,Option<UiClickHandlerFn>,*mut
+std::ffi::c_void)->bool>
+field UiVtableV1.current_event offset=72 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*mutu32,*mutu8,usize,*mutusize,*mutu8,
+usize,*mutusize)->bool>
+field UiVtableV1.spawn_source offset=80 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*constu8,usize,*constu8,usize)->bool>
+field UiVtableV1.set_properties offset=88 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*constu8,usize,*constu8,usize)->bool>
+field UiVtableV1.remove_node offset=96 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,*constu8,usize)->bool>
+field UiVtableV1.runner_name offset=104 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*constu8,usize,*mutu8,usize,*mutusize)->
+bool>
+field UiVtableV1.state_get_json offset=112 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*constu8,usize,*mutu8,usize,*mutusize)->
+bool>
+field UiVtableV1.state_set_json offset=120 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*constu8,usize,*constu8,usize)->bool>
+field UiVtableV1.node_rect offset=128 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*constu8,usize,bool,*mutf32,*mutf32,*mut
+f32,*mutf32)->bool>
+field UiVtableV1.child_count offset=136 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*constu8,usize,*mutusize)->bool>
+field UiVtableV1.child_name_at offset=144 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*constu8,usize,usize,*mutu8,usize,*mut
+usize)->bool>
+field UiVtableV1.input_event_count offset=152 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->usize>
+field UiVtableV1.input_event_at offset=160 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,usize,*mutu32,*mutu8,usize,*mutusize)->
+bool>
+layout SceneVtableV1 align=8
+size SceneVtableV1 = 80
+field SceneVtableV1.size offset=0 type=usize
+field SceneVtableV1.kind offset=8 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->u32>
+field SceneVtableV1.new_game_team_id offset=16 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*mutusize)->bool>
+field SceneVtableV1.new_game_set_team_id offset=24 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,usize)->bool>
+field SceneVtableV1.new_game_with_tutorial offset=32 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*mutbool)->bool>
+field SceneVtableV1.new_game_set_with_tutorial offset=40 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,bool)->bool>
+field SceneVtableV1.new_game_manager_name offset=48 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*mutu8,usize,*mutusize)->bool>
+field SceneVtableV1.new_game_set_manager_name offset=56 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,*constu8,usize)->bool>
+field SceneVtableV1.new_game_option_get_json offset=64 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*constu8,usize,*mutu8,usize,*mutusize)->
+bool>
+field SceneVtableV1.new_game_option_set_json offset=72 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*constu8,usize,*constu8,usize)->bool>
+layout AssetVtableV1 align=8
+size AssetVtableV1 = 40
+field AssetVtableV1.size offset=0 type=usize
+field AssetVtableV1.i18n_get offset=8 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*constu8,usize,*mutu8,usize,*mutusize)->
+bool>
+field AssetVtableV1.play_sound offset=16 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,*constu8,usize,f32)->
+bool>
+field AssetVtableV1.play_bgm offset=24 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,*constStrV1,usize)->
+bool>
+field AssetVtableV1.stop_bgm offset=32 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void)->bool>
+layout DrawVtableV1 align=8
+size DrawVtableV1 = 80
+field DrawVtableV1.size offset=0 type=usize
+field DrawVtableV1.can_draw offset=8 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->bool>
+field DrawVtableV1.map_size offset=16 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*constu8,usize,*mutf32,*mutf32)->bool>
+field DrawVtableV1.set_camera offset=24 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*constu8,usize,f32,f32,f32,f32)->bool>
+field DrawVtableV1.rect offset=32 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*constu8,usize,f32,f32,f32,f32,i32,f32,u32)
+->bool>
+field DrawVtableV1.circle offset=40 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*constu8,usize,f32,f32,f32,i32,u32)->bool>
+field DrawVtableV1.line offset=48 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*constu8,usize,f32,f32,f32,f32,f32,i32,u32)
+->bool>
+field DrawVtableV1.text offset=56 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*constu8,usize,*constu8,usize,*constu8,
+usize,f32,f32,f32,f32,i32,f32,u32,u32,u32)->bool>
+field DrawVtableV1.svg offset=64 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*constu8,usize,*constu8,usize,f32,f32,f32,
+f32,i32,u32)->bool>
+field DrawVtableV1.sprite offset=72 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*constu8,usize,*constu8,usize,f32,f32,i32,
+f32,bool,bool,f32,f32,f32,f32,f32,f32,bool)->bool>
+layout ClientCtxV1 align=8
+size ClientCtxV1 = 72
+field ClientCtxV1.size offset=0 type=usize
+field ClientCtxV1.ui offset=8 type=*constUiVtableV1
+field ClientCtxV1.scene offset=16 type=*constSceneVtableV1
+field ClientCtxV1.asset offset=24 type=*constAssetVtableV1
+field ClientCtxV1.save offset=32 type=*constSaveVtableV1
+field ClientCtxV1.net offset=40 type=*constNetVtableV1
+field ClientCtxV1.state offset=48 type=*mutstd::ffi::c_void
+field ClientCtxV1.data offset=56 type=*constDataVtableV1
+field ClientCtxV1.draw offset=64 type=*constDrawVtableV1
+layout ExtensionVtableV1 align=8
+size ExtensionVtableV1 = 64
+field ExtensionVtableV1.size offset=0 type=usize
+field ExtensionVtableV1.destroy offset=8 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void)>
+field ExtensionVtableV1.on_init offset=16 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,*mutClientCtxV1)>
+field ExtensionVtableV1.pre_update offset=24 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,*mutClientCtxV1,u64)>
+field ExtensionVtableV1.post_update offset=32 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,*mutClientCtxV1,u64)>
+field ExtensionVtableV1.on_end offset=40 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void)>
+field ExtensionVtableV1.pre_render offset=48 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,*mutClientCtxV1)>
+field ExtensionVtableV1.post_render offset=56 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,*mutClientCtxV1)>
+layout ExtensionRegV1 align=8
+size ExtensionRegV1 = 16
+field ExtensionRegV1.userdata offset=0 type=*mutstd::ffi::c_void
+field ExtensionRegV1.vtable offset=8 type=*constExtensionVtableV1
+layout InputV1 align=8
+size InputV1 = 72
+field InputV1.kind offset=0 type=u32
+field InputV1.target offset=8 type=InputTargetV1
+field InputV1.x offset=56 type=u64
+field InputV1.y offset=64 type=u64
+const CHAMPION_BRIEF_TAG_CAP = 12
+layout ChampionBriefV1 align=8
+size ChampionBriefV1 = 216
+field ChampionBriefV1.name offset=0 type=StrV1
+field ChampionBriefV1.category offset=16 type=u32
+field ChampionBriefV1.tag_count offset=20 type=u32
+field ChampionBriefV1.tags offset=24 type=[u32;CHAMPION_BRIEF_TAG_CAP]
+field ChampionBriefV1.stat offset=72 type=StatV1
+field ChampionBriefV1.growth offset=144 type=StatV1
+layout DraftCtxV1 align=8
+size DraftCtxV1 = 120
+field DraftCtxV1.size offset=0 type=usize
+field DraftCtxV1.phase offset=8 type=u32
+field DraftCtxV1.difficulty offset=12 type=u32
+field DraftCtxV1.is_explore offset=16 type=bool
+field DraftCtxV1.available_ptr offset=24 type=*constusize
+field DraftCtxV1.available_len offset=32 type=usize
+field DraftCtxV1.ally_ban_ptr offset=40 type=*constusize
+field DraftCtxV1.ally_ban_len offset=48 type=usize
+field DraftCtxV1.enemy_ban_ptr offset=56 type=*constusize
+field DraftCtxV1.enemy_ban_len offset=64 type=usize
+field DraftCtxV1.ally_pick_ptr offset=72 type=*constusize
+field DraftCtxV1.ally_pick_len offset=80 type=usize
+field DraftCtxV1.enemy_pick_ptr offset=88 type=*constusize
+field DraftCtxV1.enemy_pick_len offset=96 type=usize
+field DraftCtxV1.champion_briefs_ptr offset=104 type=*constChampionBriefV1
+field DraftCtxV1.champion_briefs_len offset=112 type=usize
+layout DraftHookVtableV1 align=8
+size DraftHookVtableV1 = 64
+field DraftHookVtableV1.size offset=0 type=usize
+field DraftHookVtableV1.destroy offset=8 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void)>
+field DraftHookVtableV1.id offset=16 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->StrV1>
+field DraftHookVtableV1.priority offset=24 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->i32>
+field DraftHookVtableV1.score_ban offset=32 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*constDraftCtxV1,usize,f32,*mutf32)->u32>
+field DraftHookVtableV1.score_pick offset=40 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*constDraftCtxV1,usize,f32,*mutf32)->u32>
+field DraftHookVtableV1.decide_ban offset=48 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*constDraftCtxV1,*mutusize)->bool>
+field DraftHookVtableV1.decide_pick offset=56 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*constDraftCtxV1,*mutusize)->bool>
+layout DraftHookRegV1 align=8
+size DraftHookRegV1 = 16
+field DraftHookRegV1.userdata offset=0 type=*mutstd::ffi::c_void
+field DraftHookRegV1.vtable offset=8 type=*constDraftHookVtableV1
+layout AiInitV1 align=8
+size AiInitV1 = 56
+field AiInitV1.size offset=0 type=usize
+field AiInitV1.player_id offset=8 type=usize
+field AiInitV1.athlete_id offset=16 type=usize
+field AiInitV1.team offset=24 type=usize
+field AiInitV1.lane offset=32 type=u32
+field AiInitV1.champion_name offset=40 type=StrV1
+layout AiCtxV1 align=8
+size AiCtxV1 = 40
+field AiCtxV1.size offset=0 type=usize
+field AiCtxV1.vtable offset=8 type=*constAiVtableV1
+field AiCtxV1.state offset=16 type=*mutstd::ffi::c_void
+field AiCtxV1.sim offset=24 type=*constSimVtableV1
+field AiCtxV1.sim_state offset=32 type=*mutstd::ffi::c_void
+layout AiVtableV1 align=8
+size AiVtableV1 = 120
+field AiVtableV1.size offset=0 type=usize
+field AiVtableV1.player_id offset=8 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->usize>
+field AiVtableV1.athlete_id offset=16 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->usize>
+field AiVtableV1.team offset=24 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->usize>
+field AiVtableV1.lane offset=32 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->u32>
+field AiVtableV1.champion_name offset=40 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*mutu8,usize,*mutusize)->bool>
+field AiVtableV1.tick offset=48 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->usize>
+field AiVtableV1.hp offset=56 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*mutusize)->bool>
+field AiVtableV1.max_hp offset=64 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*mutusize)->bool>
+field AiVtableV1.hp_ratio_percent offset=72 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*mutusize)->bool>
+field AiVtableV1.is_valid_input offset=80 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*constInputV1)->bool>
+field AiVtableV1.run_away_input offset=88 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,*mutInputV1)->bool>
+field AiVtableV1.run_away_without_skill_input offset=96 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,*mutInputV1)->bool>
+field AiVtableV1.recall_input offset=104 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,*mutInputV1)->bool>
+field AiVtableV1.is_safe_to_recall offset=112 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void)->bool>
+layout PlayerAiVtableV1 align=8
+size PlayerAiVtableV1 = 56
+field PlayerAiVtableV1.size offset=0 type=usize
+field PlayerAiVtableV1.destroy offset=8 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void)>
+field PlayerAiVtableV1.clone offset=16 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->*mutstd::ffi::c_void>
+field PlayerAiVtableV1.id offset=24 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->StrV1>
+field PlayerAiVtableV1.priority offset=32 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void)->i32>
+field PlayerAiVtableV1.matches offset=40 type=Option<unsafeextern"C"fn(*conststd::ffi::c_void,*constAiInitV1)->bool>
+field PlayerAiVtableV1.think offset=48 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*mutAiCtxV1,*constInputV1,*mutInputV1)->u32>
+layout PlayerAiRegV1 align=8
+size PlayerAiRegV1 = 16
+field PlayerAiRegV1.userdata offset=0 type=*mutstd::ffi::c_void
+field PlayerAiRegV1.vtable offset=8 type=*constPlayerAiVtableV1
+layout JsonDocVtableV1 align=8
+size JsonDocVtableV1 = 24
+field JsonDocVtableV1.size offset=0 type=usize
+field JsonDocVtableV1.get_json offset=8 type=Option<unsafeextern"C"
+fn(*conststd::ffi::c_void,*constu8,usize,*mutu8,usize,*mutusize)->
+bool>
+field JsonDocVtableV1.set_json offset=16 type=Option<unsafeextern"C"
+fn(*mutstd::ffi::c_void,*constu8,usize,*constu8,usize)->bool>
+layout JsonDocCtxV1 align=8
+size JsonDocCtxV1 = 24
+field JsonDocCtxV1.size offset=0 type=usize
+field JsonDocCtxV1.vtable offset=8 type=*constJsonDocVtableV1
+field JsonDocCtxV1.state offset=16 type=*mutstd::ffi::c_void
+layout MapCustomizerVtableV1 align=8
+size MapCustomizerVtableV1 = 24
+field MapCustomizerVtableV1.size offset=0 type=usize
+field MapCustomizerVtableV1.destroy offset=8 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void)>
+field MapCustomizerVtableV1.customize offset=16 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,u32,*mutJsonDocCtxV1)>
+layout MapCustomizerRegV1 align=8
+size MapCustomizerRegV1 = 16
+field MapCustomizerRegV1.userdata offset=0 type=*mutstd::ffi::c_void
+field MapCustomizerRegV1.vtable offset=8 type=*constMapCustomizerVtableV1
+layout MatchHookVtableV1 align=8
+size MatchHookVtableV1 = 40
+field MatchHookVtableV1.size offset=0 type=usize
+field MatchHookVtableV1.destroy offset=8 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void)>
+field MatchHookVtableV1.on_match_start offset=16 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,*mutSimCtxV1)>
+field MatchHookVtableV1.on_match_tick offset=24 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,*mutSimCtxV1,u64)>
+field MatchHookVtableV1.check_match_end offset=32 type=Option<unsafeextern"C"fn(*mutstd::ffi::c_void,*mutSimCtxV1,*mutbool)
+->bool>
+layout MatchHookRegV1 align=8
+size MatchHookRegV1 = 16
+field MatchHookRegV1.userdata offset=0 type=*mutstd::ffi::c_void
+field MatchHookRegV1.vtable offset=8 type=*constMatchHookVtableV1
+layout HostApiV1 align=8
+size HostApiV1 = 104
+field HostApiV1.size offset=0 type=usize
+field HostApiV1.host_abi_level offset=8 type=u32
+field HostApiV1.game_version offset=12 type=GameVersionV1
+field HostApiV1.log offset=24 type=Option<unsafeextern"C"fn(u32,*constu8,usize)>
+field HostApiV1.sim offset=32 type=*constSimVtableV1
+field HostApiV1.frame offset=40 type=*constFrameVtableV1
+field HostApiV1.service offset=48 type=*constServiceVtableV1
+field HostApiV1.save offset=56 type=*constSaveVtableV1
+field HostApiV1.net offset=64 type=*constNetVtableV1
+field HostApiV1.data offset=72 type=*constDataVtableV1
+field HostApiV1.ui offset=80 type=*constUiVtableV1
+field HostApiV1.scene offset=88 type=*constSceneVtableV1
+field HostApiV1.asset offset=96 type=*constAssetVtableV1
+layout ModExportV1 align=8
+size ModExportV1 = 184
+field ModExportV1.size offset=0 type=usize
+field ModExportV1.required_abi_level offset=8 type=u32
+field ModExportV1.mod_id_ptr offset=16 type=*constu8
+field ModExportV1.mod_id_len offset=24 type=usize
+field ModExportV1.destroy offset=32 type=Option<unsafeextern"C"fn(*mutModExportV1)>
+field ModExportV1.champions_ptr offset=40 type=*constChampionRegV1
+field ModExportV1.champions_len offset=48 type=usize
+field ModExportV1.items_ptr offset=56 type=*constItemRegV1
+field ModExportV1.items_len offset=64 type=usize
+field ModExportV1.native_effects_ptr offset=72 type=*constNativeEffectRegV1
+field ModExportV1.native_effects_len offset=80 type=usize
+field ModExportV1.server_ext offset=88 type=ServerExtRegV1
+field ModExportV1.extension offset=104 type=ExtensionRegV1
+field ModExportV1.draft_hooks_ptr offset=120 type=*constDraftHookRegV1
+field ModExportV1.draft_hooks_len offset=128 type=usize
+field ModExportV1.player_ai_ptr offset=136 type=*constPlayerAiRegV1
+field ModExportV1.player_ai_len offset=144 type=usize
+field ModExportV1.map_customizer offset=152 type=MapCustomizerRegV1
+field ModExportV1.match_hook offset=168 type=MatchHookRegV1

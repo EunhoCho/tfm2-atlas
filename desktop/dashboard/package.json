@@ -1,0 +1,22 @@
+{
+  "name": "tfm2-atlas-dashboard",
+  "version": "1.0.33",
+  "private": true,
+  "description": "TFM2 Atlas Dashboard for Teamfight Manager 2 0.5.5",
+  "author": "ehcho",
+  "license": "MIT",
+  "main": "src/main.cjs",
+  "scripts": {
+    "test": "node --test tests/*.test.cjs",
+    "start": "electron .",
+    "pack": "electron-builder --win portable --x64"
+  },
+  "devDependencies": { "electron": "37.10.3", "electron-builder": "26.15.3" },
+  "build": {
+    "appId": "io.ehcho.tfm2.atlas.dashboard",
+    "productName": "TFM2 Atlas Dashboard",
+    "artifactName": "TFM2.Atlas.Dashboard.1.0.33.${ext}",
+    "files": ["src/**/*", "renderer/**/*", "assets/**/*", "package.json"],
+    "win": { "target": "portable", "icon": "assets/atlas-dashboard.png" }
+  }
+}

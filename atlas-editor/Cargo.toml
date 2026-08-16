@@ -1,0 +1,12 @@
+[package]
+name = "tfm2_atlas_editor"
+version = "1.0.33"
+edition = "2021"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+mod-api-stable = { path = "../vendor/mod-api-stable" }
+tfm2_atlas_core = { path = "../atlas-core", default-features = false }

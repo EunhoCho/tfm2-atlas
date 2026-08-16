@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="../assets/atlas-editor.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>TFM2 Atlas Editor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="editor-shell">
+    <aside id="sidebar" class="sidebar">
+      <div class="brand"><span class="brand-mark">A</span><div><strong>Atlas Editor</strong><small>TFM2 0.5.5</small></div><button id="sidebarToggle" class="sidebar-toggle" type="button" aria-label="메뉴 숨기기" data-i18n-title="hideMenu">‹</button></div>
+      <label id="entitySearchWrap" class="search-wrap"><span>⌕</span><input id="search" type="search" data-placeholder="searchEditor" /></label>
+      <label class="search-wrap editor-team-filter"><span aria-hidden="true">◇</span><select id="teamFilter" aria-label="팀 선택"></select></label>
+      <nav id="primaryNav" class="primary-nav"></nav>
+      <div class="champion-list editor-entity-list" id="entityList"></div>
+      <div class="sidebar-footer">
+        <div class="language-switch"><button data-language="ko">한국어</button><button data-language="en">English</button></div>
+      </div>
+    </aside>
+    <button id="sidebarReveal" class="sidebar-reveal" type="button" aria-label="메뉴 열기" data-i18n-title="showMenu">☰</button>
+    <main class="main">
+      <header class="topbar">
+        <div><small>TFM2 · 0.5.5</small><h1 id="pageTitle"></h1></div>
+        <div class="connection" id="connection"><span class="dot"></span><div><strong></strong><small></small></div></div>
+      </header>
+      <section id="content" class="content editor-content"></section>
+    </main>
+    <div id="modalBackdrop" class="modal-backdrop" hidden><section id="modal" class="modal-card"></section></div>
+    <div id="toast" class="toast" hidden></div>
+    <script src="editor-model.js"></script>
+    <script src="editor.js"></script>
+  </body>
+</html>

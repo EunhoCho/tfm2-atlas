@@ -1,0 +1,15 @@
+[package]
+name = "tfm2_atlas_client_055"
+version = "1.0.33"
+edition = "2021"
+
+[package.metadata.tfm2]
+display_version = "1.0.33"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+# mod_api is injected by the Teamfight Manager 2 Mod SDK build scripts.
+
+[workspace]

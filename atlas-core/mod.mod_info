@@ -1,0 +1,15 @@
+{
+  "name": "TFM2 Atlas Core",
+  "author": "ehcho",
+  "version": "1.0.33",
+  "mod_type": "native",
+  "contains_code": true,
+  "description": "Career indexing, statistics, champion tiers and manual Draft analysis for TFM2 Atlas Dashboard.",
+  "last_updated": "2026-08-15",
+  "dependencies": [
+    {
+      "mod_id": "base",
+      "version": ">=0.5.5"
+    }
+  ]
+}

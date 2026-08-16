@@ -1,0 +1,9 @@
+[package]
+name = "mod-api-stable"
+version = "0.1.0"
+edition = "2021"
+description = "Stable-ABI modding contract for TeamfightManager2. Zero dependencies; this crate is the SDK."
+
+# 이 크레이트는 의존성 0을 원칙으로 한다 (docs/mod_stable_abi_design.md §3).
+# game-core/engine-core 타입은 어떤 형태로도 이 크레이트에 나타나면 안 된다.
+[dependencies]

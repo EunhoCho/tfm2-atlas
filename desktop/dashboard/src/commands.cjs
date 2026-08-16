@@ -1,0 +1,22 @@
+const DASHBOARD_COMMANDS = new Set([
+  "GET_DASHBOARD",
+  "PREVIEW_TIER_PROFILE",
+  "APPLY_TIER_PROFILE",
+  "GET_DIAGNOSTICS",
+  "EXPORT_TIER_TSV",
+  "VALIDATE_TIER_TSV",
+  "GET_CATALOG",
+  "GET_MOCK_DRAFT",
+  "SET_MOCK_DRAFT_CONTEXT",
+  "APPLY_MOCK_DRAFT_ACTION",
+  "REMOVE_MOCK_DRAFT_ACTION",
+  "UNDO_MOCK_DRAFT",
+  "RESET_MOCK_DRAFT_SET",
+  "SET_DRAFT_SETTINGS",
+]);
+
+function allowsDashboardCommand(command) {
+  return DASHBOARD_COMMANDS.has(command);
+}
+
+module.exports = { DASHBOARD_COMMANDS, allowsDashboardCommand };

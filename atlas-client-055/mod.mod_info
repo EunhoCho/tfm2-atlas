@@ -1,0 +1,13 @@
+{
+  "author": "ehcho",
+  "dependencies": [
+    {
+      "mod_id": "base",
+      "version": ">=0.5.5"
+    }
+  ],
+  "description": "TFM2 Atlas 0.5.5 active champion, official position and client tier synchronizer.",
+  "mod_id": "tfm2_atlas_client_055",
+  "name": "TFM2 Atlas Client 0.5.5",
+  "version": "1.0.33"
+}

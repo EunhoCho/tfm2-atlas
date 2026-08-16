@@ -1,0 +1,30 @@
+# Rust build output
+/target/
+**/target/
+**/node_modules/
+**/dist/
+.build/
+.playwright-cli/
+release/
+*.dll
+*.exe
+*.zip
+*:Zone.Identifier
+tools/.ko-translation-cache.json
+tools/.local-translate/
+tools/.local-model/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.bak
+
+# Logs
+*.log

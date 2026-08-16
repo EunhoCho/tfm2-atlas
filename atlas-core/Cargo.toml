@@ -1,0 +1,19 @@
+[package]
+name = "tfm2_atlas_core"
+version = "1.0.33"
+edition = "2021"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = ["core-entry"]
+core-entry = []
+
+[dependencies]
+mod-api-stable = { path = "../vendor/mod-api-stable" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tfm2_atlas_engine = { path = "../engine" }
+lz4_flex = "0.11"
